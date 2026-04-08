@@ -2,18 +2,18 @@
 
 **Ferret out secrets and vulnerabilities in your API collections.**
 
-Ferret is a local-first, offline CLI tool that scans API collections for hardcoded secrets, leaked credentials, and common API security misconfigurations. It supports Bruno, Postman, and Insomnia collections and runs entirely offline — no accounts, no cloud, no telemetry.
+Ferret is a local-first, offline CLI tool that scans API collections for hardcoded secrets, leaked credentials, and common API security misconfigurations. It supports Bruno, Postman, and Insomnia collections and runs entirely offline with no accounts, no cloud, no telemetry.
 
 Built for small development teams (2–20 people) who don't have a dedicated security engineer but still want to catch secrets before they reach production.
 
 ## Features
 
-- **Secret Detection** — 15 regex-based rules covering AWS keys, GitHub tokens, Stripe keys, Slack tokens, JWTs, private keys, Google/SendGrid/Twilio credentials, hardcoded passwords, and more
-- **Entropy Analysis** — flags high-entropy strings that look like secrets, with false positive suppression for template variables and placeholders
-- **OWASP API Top 10** — 9 heuristic rules checking for missing auth, HTTP endpoints, mass assignment risk, missing pagination, security misconfigurations, and unversioned APIs
-- **Multi-Format Support** — parses Bruno directories, Postman v2.0/v2.1 exports, and Insomnia v4 exports with automatic format detection
-- **CI/CD Ready** — `--fail-on` flag returns exit code 1 when findings meet a severity threshold, perfect for pipeline gates
-- **Multiple Output Formats** — terminal (colored), JSON (machine-readable), and self-contained HTML reports
+- **Secret Detection** - 15 regex-based rules covering AWS keys, GitHub tokens, Stripe keys, Slack tokens, JWTs, private keys, Google/SendGrid/Twilio credentials, hardcoded passwords, and more
+- **Entropy Analysis** - flags high-entropy strings that look like secrets, with false positive suppression for template variables and placeholders
+- **OWASP API Top 10** - 9 heuristic rules checking for missing auth, HTTP endpoints, mass assignment risk, missing pagination, security misconfigurations, and unversioned APIs
+- **Multi-Format Support** - parses Bruno directories, Postman v2.0/v2.1 exports, and Insomnia v4 exports with automatic format detection
+- **CI/CD Ready** - `--fail-on` flag returns exit code 1 when findings meet a severity threshold, perfect for pipeline gates
+- **Multiple Output Formats** - terminal (colored), JSON (machine-readable), and self-contained HTML reports
 - **Offline & Private** — everything runs locally, no network calls, no data leaves your machine
 
 ## Installation
