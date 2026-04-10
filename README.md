@@ -18,6 +18,13 @@ Built for small development teams (2–20 people) who don't have a dedicated sec
 
 ## Installation
 
+Now avaliable on the AUR!
+
+```bash
+yay -S ferret-scanner
+paru -S ferret-scanner
+```
+
 ### From source
 
 ```bash
